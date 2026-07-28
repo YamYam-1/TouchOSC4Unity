@@ -46,7 +46,3 @@ Delegate 기반으로 Rotation Mode와 Color Mode를 분리하여 새로운 조�
 
 ### 
 ---
-
-## Refrence
-
-Efficient GPU Screen-Space Ray Tracing - Morgan McGuire
