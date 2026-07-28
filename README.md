@@ -8,7 +8,8 @@ OSC 메시지를 수신하여 조명의 색상, 밝기 등의 값을 즉시 반�
 
 ## Demo
 
-<img width="2560" height="1440" alt="Image" src="https://github.com/user-attachments/assets/2c5fca5b-5244-4b5e-84be-aba34f5b9afa" />
+
+<img width="500" height="700" alt="Image" src="https://github.com/user-attachments/assets/0b001fd9-7e06-4955-965d-87ccf842f978" />)
 
 ---
 
