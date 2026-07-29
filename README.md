@@ -4,6 +4,15 @@ TouchOSC와 OSC(Open Sound Control)를 이용해
 모바일에서 Unity 조명을 실시간으로 제어하는 프로젝트입니다.
 OSC 메시지를 수신하여 조명의 색상, 밝기 등의 값을 즉시 반영합니다.
 
+#### Rotation
+- **Common** : 모든 조명이 동일한 패턴으로 회전
+- **Odd_Even** : 홀수/짝수 조명이 서로 반대 위상으로 회전
+
+#### Color
+- **Common** : 동일한 색상 적용
+- **Odd_Even** : 홀수/짝수에 서로 다른 색상 적용
+- **Flashing** : 점멸 효과
+
 ---
 
 ## Demo
