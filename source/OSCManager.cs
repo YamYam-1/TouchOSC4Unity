@@ -7,17 +7,6 @@ public class OSCManager : MonoBehaviour
     [SerializeField]
     PerObjectColor[] groups;
 
-
-    public struct GroupState
-    {
-       public float fades;
-       public float bpms;
-       public int rmodes;
-       public int cmodes;
-    }
-
-    public GroupState[] elements;
-
     private void Start()
     {
         _osc = GetComponent<OSC>();
