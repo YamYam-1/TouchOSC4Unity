@@ -11,19 +11,27 @@ public class LightingMode
 
     public delegate void RotationMode(float beat, Transform targets, int idx);
     public delegate LightState ColorMode(float beat, float fade, Color color_a, Color color_b, int idx);
-    public enum RotationModeName { Common, Odd_Even };
+
+    // 회전 모드
+    public enum  RotationModeName { Common, Odd_Even };
     static RotationMode[] Rmodes = { Common, Odd_Even };
-    public enum ColorModeName { Common, Odd_Even, Flashing };
-    static ColorMode[] Cmodes = { Common, Odd_Even, Flashing };
+
     public static RotationMode RGetMode(RotationModeName name)
     {
         return Rmodes[(int)name];
     }
+
+    // 색 모드
+    public enum ColorModeName { Common, Odd_Even, Flashing };
+    static ColorMode[] Cmodes = { Common, Odd_Even, Flashing };
+    
     public static ColorMode CGetMode(ColorModeName name)
     {
         return Cmodes[(int)name];
 
     }
+
+    
     public static void Common(float beat, Transform targets, int idx)
     {
 
@@ -45,7 +53,6 @@ public class LightingMode
     }
 
 
-
     public static LightState Common(float beat, float fade, Color color_a, Color color_b, int idx)
     {
         LightState state;
@@ -65,6 +72,7 @@ public class LightingMode
         state.intensity = fade;
         return state;
     }
+    
     public static LightState Flashing(float beat, float fade, Color color_a, Color color_b, int idx)
     {
         float pulse = Mathf.Sin(Time.time * 8f) * 0.5f + 0.5f;
